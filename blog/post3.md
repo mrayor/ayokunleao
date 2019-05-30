@@ -2,6 +2,7 @@
 title: Blog Post Three
 featuredImage: /uploads/images.png
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium velit non mi pharetra suscipit. Integer eu leo eget velit dapibus aliquet pharetra eget sapien. Proin sollicitudin libero in tincidunt euismod.
+date: May, 26 2019
 ---
 
 # Blog Post Three
