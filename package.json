@@ -1,0 +1,19 @@
+{
+  "name": "ayokunleao",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/source-filesystem": "^0.5.0",
+    "@gridsome/transformer-remark": "^0.3.2",
+    "@playlyfe/gql": "^2.6.1",
+    "github-markdown-css": "^3.0.1",
+    "gridsome": "^0.6.0"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^2.2.6"
+  }
+}
