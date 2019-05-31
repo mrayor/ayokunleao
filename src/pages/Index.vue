@@ -34,7 +34,7 @@
                 alt="linkedin"
               />
               <a href="#" class="hover:text-teal-500 mx-2"
-                >me@ayokunleao.com
+                >me@ayokunleao.dev
               </a>
             </li>
           </ul>
@@ -56,25 +56,29 @@
                 {{ post.node.title }}
               </h1></g-link
             >
-            <span class="text-xs font-bold">25, March 2019</span>
+            <span class="text-xs font-bold">{{ post.node.date }}</span>
           </div>
         </div>
-        <a href="#" class="hover:text-teal-500 text-sm py-2">view more >></a>
+        <g-link to="/blog" class="hover:text-teal-500 text-sm py-2"
+          >view more >></g-link
+        >
       </div>
 
       <div>
         <h3 class="text-xl font-medium py-5">recent projects</h3>
         <div v-for="portfolio in $page.portfolios.edges" :key="portfolio.id">
           <div class="py-1">
-            <a :href="portfolio.node.url"
+            <a :href="portfolio.node.url" target="_blank"
               ><h1 class="hover:text-teal-500 truncate">
                 {{ portfolio.node.title }}
               </h1></a
             >
-            <span class="text-xs font-bold">25, March 2019</span>
+            <span class="text-xs font-bold">{{ portfolio.node.date }}</span>
           </div>
         </div>
-        <a href="#" class="hover:text-teal-500 text-sm py-2">view more >></a>
+        <g-link to="/project" class="hover:text-teal-500 text-sm py-2"
+          >view more >></g-link
+        >
       </div>
       <div>
         <h3 class="text-xl font-medium py-5">recent pictures</h3>
@@ -85,24 +89,36 @@
                 {{ portfolio.node.imageName }}
               </h1></a
             >
-            <span class="text-xs font-bold">25, March 2019</span>
+            <span class="text-xs font-bold">{{ portfolio.node.date }}</span>
           </div>
         </div>
-        <a href="#" class="hover:text-teal-500 text-sm py-2">view more >></a>
+        <g-link to="/project" class="hover:text-teal-500 text-sm py-2"
+          >view more >></g-link
+        >
       </div>
     </section>
   </Layout>
 </template>
 
 <page-query>
-  query { posts: allPost{ edges{ node{ id path title } } } portfolios:
-  allPortfolio{ edges{ node{ id title url featuredImage imageName } } } }
+  query post($page: Int) { posts: allPost(perPage: 3, page: $page,
+  sortBy:"date"){ edges{ node{ id path title date} } } portfolios:
+  allPortfolio(perPage: 3, page: $page, sortBy:"date"){ edges{ node{ id title
+  url featuredImage imageName date } } } }
 </page-query>
 
 <script>
   export default {
     metaInfo: {
-      title: "Home"
+      title: "Home",
+      meta: [
+        {
+          key: "description",
+          name: "Home",
+          content:
+            "My name is Ayokunle, I am a designer from Nigeria. Welcome to my portfolio"
+        }
+      ]
     }
   };
 </script>

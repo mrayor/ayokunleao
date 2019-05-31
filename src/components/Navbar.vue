@@ -6,10 +6,18 @@
       <g-link to="/"><img src="../../static/logo.svg" alt="logo"/></g-link>
       <ul class="lowercase flex items-center">
         <li class="m-4 sm:mr-16">
-          <g-link to="/blog" class="hover:text-teal-500 text-lg">blog</g-link>
+          <g-link
+            to="/blog"
+            class="hover:text-teal-500 text-lg"
+            active-class="text-teal-500"
+            >blog</g-link
+          >
         </li>
         <li class="m-4 sm:mr-16">
-          <g-link to="/project" class="hover:text-teal-500 text-lg"
+          <g-link
+            to="/project"
+            class="hover:text-teal-500 text-lg"
+            active-class="text-teal-500"
             >project</g-link
           >
         </li>

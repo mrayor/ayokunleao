@@ -6,6 +6,10 @@
 
 module.exports = {
   siteName: "Adesanya Ayokunle | Personal Portfolio",
+  icon: "./src/favicon.png",
+  siteUrl: "https://www.ayokunleao.dev",
+  siteDescription:
+    "My name is Ayokunle Adesanya, I am a software developer and creative designer. Welcome to my portfolio",
   plugins: [
     {
       use: "gridsome-plugin-tailwindcss",

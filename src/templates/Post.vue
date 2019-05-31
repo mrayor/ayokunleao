@@ -11,14 +11,19 @@
         <h1>{{$page.post.title}}</h1>
         <img class="w-full h-auto object-cover" :src="$page.post.featuredImage" alt="blog">
         <div v-html="$page.post.content" />
+        <span class="text-xs font-bold text-red-500">Published: {{$page.post.date}}</span>
+             
+
+
       </div> 
-    
+       <div class="sharethis-inline-share-buttons"></div>
+      <vue-disqus class="mb-10" shortname="ayokunleao" :identifier="$page.post.title"></vue-disqus>
     </Section>
     </Layout>
 </template>
 
 <page-query>
-  query Post ($path: String!) { post: post (path: $path){ title content featuredImage } }
+  query Post ($path: String!) { post: post (path: $path){ title content featuredImage date } }
 </page-query>
 
 <style>
@@ -43,7 +48,10 @@
   export default {
     metaInfo() {
       return {
-        title: this.$page.post.title
+        title: this.$page.post.title,
+        key: 'description',
+        name: this.$page.post.title,
+        content: this.$page.post.content
       };
     }
   };

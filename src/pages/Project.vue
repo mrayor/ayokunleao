@@ -1,9 +1,9 @@
 <template>
   <ProjectLayout>
     <Section
-      class="container mx-auto px-4 flex sm:items-center justify-around flex-col sm:flex-row pt-32 sm:pt-24"
+      class="container mx-auto px-4 flex sm:items-center justify-around flex-col sm:flex-row sm:pt-16"
     >
-      <div class="pt-32 justify-start w-full pb-24">
+      <div class=" justify-start w-full pb-24">
         <h3 class="text-2xl font-bold py-5">recent projects</h3>
         <div class="px-2">
           <div class="flex -mx-2 flex-wrap sm:flex-row flex-col">
@@ -48,12 +48,9 @@
             </div>
             </div>
           </div>
-          <div class="text-center py-4">
-            <button
-              class="bg-teal-500 text-xs text-white py-2 px-4 rounded hover:bg-teal-700"
-            >
-              view more
-            </button>
+          <div class="text-center py-8">
+              <Pager linkClass="bg-transparent hover:bg-teal-500 text-teal-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded-full sm:mx-4 mx-2" :info="$page.portfolios.pageInfo" range="3"/>
+              <p class="py-4 text-red-500">page {{$page.portfolios.pageInfo.currentPage}} of {{$page.portfolios.pageInfo.totalPages}}</p>
           </div>
         </div>
       </div>
@@ -62,30 +59,39 @@
 </template>
 
 <page-query>
-  query Portfolios {
-  portfolios: allPortfolio{
-    edges{
-      node{
-        id
-        url
-        title
-        description
-        featuredImage
-      }	
+    query Portfolios($page: Int) {
+      portfolios: allPortfolio(perPage: 8, page: $page sortBy:"date")  @paginate {
+        pageInfo {
+          totalPages
+          currentPage
+        }
+        edges{
+          node{
+            id
+            url
+            title
+            description
+            featuredImage
+          }	
+        }
+      }
     }
-  }
-}
 </page-query>
 
 <script>
+  import { Pager } from 'gridsome'
   import ProjectLayout from "~/layouts/Project";
 
   export default {
     components: {
-      ProjectLayout
+      ProjectLayout, 
+      Pager
     },
     metaInfo: {
-      title: "Projects"
+      title: "Projects",
+      meta: [
+      { key: 'description', name: 'Recent Projects', content: 'My Creative Personal Portfolio' }
+    ]
     }
   };
 </script>

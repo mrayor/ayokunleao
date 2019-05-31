@@ -3,11 +3,12 @@
     <header class="border-t-8 border-teal-500 w-full fixed">
       <header class="fixed bg-white w-full ">
         <Navbar />
-      <div class="bg-cream">
-        <h1 class="text-2xl sm:text-3xl font-bold py-4 text-center">Tech talk and <br>other interesting things</h1>
-      </div>
       </header>
-      
+    </header>
+    <header class="mt-32 sm:mt-24">
+      <div class="bg-cream">
+        <h1 class="text-2xl sm:text-3xl font-bold py-4 text-center">Tech talk <br>and other interesting things</h1>
+      </div>
     </header>
     <main class="flex-grow">
       <div>

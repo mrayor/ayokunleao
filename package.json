@@ -11,7 +11,8 @@
     "@gridsome/transformer-remark": "^0.3.2",
     "@playlyfe/gql": "^2.6.1",
     "github-markdown-css": "^3.0.1",
-    "gridsome": "^0.6.0"
+    "gridsome": "^0.6.0",
+    "vue-disqus": "^3.0.5"
   },
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^2.2.6"
