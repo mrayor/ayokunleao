@@ -24,7 +24,7 @@
           </li>
           <li class="mx-4 sm:mr-12">
             <a
-              href="https://web.facebook.com/haryorkunle.hardehsanyah"
+              href="https://facebook.com/haryorkunle.hardehsanyah"
               target="__blank"
               ><img src="../../static/facebook.svg" alt="facebook"
             /></a>
