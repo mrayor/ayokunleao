@@ -22,7 +22,11 @@
           >
         </li>
         <li class="m-4 sm:mr-16">
-          <a href="#" class="hover:text-teal-500 text-lg">contact</a>
+          <a
+            href="mailto:me@ayokunleao.dev?Subject=Hello%20Ayokunle"
+            class="hover:text-teal-500 text-lg"
+            >contact</a
+          >
         </li>
       </ul>
     </nav>

@@ -18,22 +18,36 @@
           <ul class="flex flex-wrap justify-center sm:justify-start">
             <li class="mr-2 flex">
               <img src="../../static/linkedin-brands.svg" alt="linkedin" />
-              <a href="#" class="hover:text-teal-500 mx-2">LinkedIn </a>
+              <a
+                href="https://www.linkedin.com/in/ayokunle-adesanya-2a217b89/"
+                class="hover:text-teal-500 mx-2"
+                target="__blank"
+                >LinkedIn
+              </a>
             </li>
             <li class="mx-2 flex">
-              <img src="../../static/github-square-brands.svg" alt="linkedin" />
-              <a href="#" class="hover:text-teal-500 mx-2">Github </a>
+              <img src="../../static/github-square-brands.svg" alt="github" />
+              <a
+                href="https://github.com/mrayor"
+                class="hover:text-teal-500 mx-2"
+                target="__blank"
+                >Github
+              </a>
             </li>
             <li class="mx-2 flex">
-              <img src="../../static/medium-brands.svg" alt="linkedin" />
-              <a href="#" class="hover:text-teal-500 mx-2">Medium </a>
+              <img src="../../static/medium-brands.svg" alt="medium" />
+              <a
+                href="https://medium.com/@adesanyaayokunle"
+                class="hover:text-teal-500 mx-2"
+                target="__blank"
+                >Medium
+              </a>
             </li>
             <li class="mx-2 flex justify-center">
-              <img
-                src="../../static/envelope-square-solid.svg"
-                alt="linkedin"
-              />
-              <a href="#" class="hover:text-teal-500 mx-2"
+              <img src="../../static/envelope-square-solid.svg" alt="mail" />
+              <a
+                href="mailto:me@ayokunleao.dev?Subject=Hello%20Ayokunle"
+                class="hover:text-teal-500 mx-2"
                 >me@ayokunleao.dev
               </a>
             </li>
