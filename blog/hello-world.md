@@ -1,6 +1,6 @@
 ---
 title: Hello World
-date: 2019-06-02T19:40:27.714Z
+date: 2019-06-02T20:10:00.000Z
 featuredImage: /uploads/post_1.png
 excerpt: >-
   Allow me to introduce myself. I am Adesanya Ayokunle, a freelance software
