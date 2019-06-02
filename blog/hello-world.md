@@ -9,4 +9,4 @@ excerpt: >-
 ---
 # Hello,
 
-So i seriously don't have any idea what am writing on. I just needed something to be on this page. Sorry, check for further update.
+So i seriously don't have any idea what am writing on. I just needed something to be on this page. Sorry, check back for further update 😂😂😂.
