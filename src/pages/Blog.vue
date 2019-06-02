@@ -14,7 +14,7 @@
             >
             <p class="text-sm truncate">{{ post.node.excerpt }}</p>
 
-            <span class="text-xs font-bold text-red-500">25, March 2019</span>
+            <span class="text-xs font-bold text-red-500">{{post.node.date}}</span>
           </div>
         </div>
       </div>
@@ -38,6 +38,7 @@
             id 
             path 
             title 
+            date
             excerpt 
           } 
         } 
