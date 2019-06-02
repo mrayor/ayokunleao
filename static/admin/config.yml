@@ -13,7 +13,7 @@ collections:
   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
     - { label: "Title", name: "title", widget: "string" }
-    - { label: "Publish Date", name: "date", widget: "datetime", format: "LLLL", dateFormat: true }
+    - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma" }
     - { label: "Featured Image", name: "featuredImage", widget: "image" }
     - { label: "Excerpt", name: "excerpt", widget: "text" }
     - { label: "Body", name: "body", widget: "markdown" }
@@ -27,5 +27,5 @@ collections:
     - { label: "Featured Image", name: "featuredImage", widget: "image" }
     - { label: "Description", name: "description", widget: "string" }
     - { label: "Image Name", name: "imageName", widget: "string" }
-    - { label: "Publish Date", name: "date", widget: "datetime", format: "LLLL", dateFormat: true }
+    - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma" }
     - { label: "URL", name: "url", widget: "string" }
