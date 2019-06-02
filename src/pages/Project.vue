@@ -50,7 +50,7 @@
           </div>
           <div class="text-center py-8">
               <Pager linkClass="bg-transparent hover:bg-teal-500 text-teal-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded-full sm:mx-4 mx-2" :info="$page.portfolios.pageInfo" range="3"/>
-              <p class="py-4 text-red-500">page {{$page.portfolios.pageInfo.currentPage}} of {{$page.portfolios.pageInfo.totalPages}}</p>
+              <p v-if="$page.portfolios.pageInfo.totalPages > 1" class="py-4 text-red-500">page {{$page.portfolios.pageInfo.currentPage}} of {{$page.portfolios.pageInfo.totalPages}}</p>
           </div>
         </div>
       </div>
