@@ -14,7 +14,7 @@
             >
             <p class="text-sm truncate">{{ post.node.excerpt }}</p>
 
-            <span class="text-xs font-bold text-red-500">{{post.node.date}}</span>
+            <span class="text-xs font-bold text-red-500">{{post.node.date | formatDate}}</span>
           </div>
         </div>
       </div>

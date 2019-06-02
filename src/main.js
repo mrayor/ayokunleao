@@ -4,6 +4,7 @@
 import "./assets/css/tailwind.css";
 import VueDisqus from "vue-disqus";
 import DefaultLayout from "~/layouts/Default.vue";
+import moment from 'moment'
 
 export default function(Vue, { router, head, isClient, appOptions }) {
   Vue.use(VueDisqus);
@@ -13,6 +14,11 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     rel: "stylesheet",
     href:
       "https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap"
+  });
+  Vue.filter('formatDate', function(value) {
+    if (value) {
+      return moment(String(value)).format('LLL')
+    }
   });
   head.htmlAttrs = { lang: "en" };
   head.meta.push({

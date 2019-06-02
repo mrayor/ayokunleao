@@ -70,7 +70,7 @@
                 {{ post.node.title }}
               </h1></g-link
             >
-            <span class="text-xs font-bold">{{ post.node.date }}</span>
+            <span class="text-xs font-bold">{{ post.node.date | formatDate }}</span>
           </div>
         </div>
         <g-link to="/blog" class="hover:text-teal-500 text-sm py-2"
@@ -87,7 +87,7 @@
                 {{ portfolio.node.title }}
               </h1></a
             >
-            <span class="text-xs font-bold">{{ portfolio.node.date }}</span>
+            <span class="text-xs font-bold">{{ portfolio.node.date | formatDate }}</span>
           </div>
         </div>
         <g-link to="/project" class="hover:text-teal-500 text-sm py-2"
@@ -103,7 +103,7 @@
                 {{ portfolio.node.imageName }}
               </h1></a
             >
-            <span class="text-xs font-bold">{{ portfolio.node.date }}</span>
+            <span class="text-xs font-bold">{{ portfolio.node.date | formatDate }}</span>
           </div>
         </div>
         <g-link to="/project" class="hover:text-teal-500 text-sm py-2"

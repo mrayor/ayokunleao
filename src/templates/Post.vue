@@ -11,7 +11,7 @@
         <h1>{{$page.post.title}}</h1>
         <img class="w-full h-auto object-cover" :src="$page.post.featuredImage" alt="blog">
         <div v-html="$page.post.content" />
-        <span class="text-xs font-bold text-red-500">Published: {{$page.post.date}}</span>
+        <span class="text-xs font-bold text-red-500">Published: {{$page.post.date | formatDate}}</span>
              
 
 

@@ -12,6 +12,7 @@
     "@playlyfe/gql": "^2.6.1",
     "github-markdown-css": "^3.0.1",
     "gridsome": "^0.6.0",
+    "moment": "^2.24.0",
     "vue-disqus": "^3.0.5"
   },
   "devDependencies": {
