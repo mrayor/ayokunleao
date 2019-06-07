@@ -32,6 +32,9 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     name: "viewport", content: "width=device-width, initial-scale=1"
   },{
     'http-equiv': "Content-Type", content: "text/html; charset=utf-8"
+  },{
+    name: "description",
+    content: "My name is Ayokunle, I am a designer from Nigeria. Welcome to my portfolio"
   });
   appOptions.render = h =>
     h(
