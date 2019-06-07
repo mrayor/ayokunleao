@@ -20,7 +20,7 @@
                     {{portfolio.node.description}}
                   </p>
                   <div class="flex justify-between">
-                    <a class="" :href="portfolio.node.url" target="__blank"
+                    <a class="" :href="portfolio.node.url" target="__blank" rel="noopener"
                       ><svg
                         class="stroke-current hover:text-teal-500"
                         xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@
                       </svg>
                     </a>
                     <div class="hover:text-teal-500">
-                      <a :href="portfolio.node.url" target="__blank">visit the project</a>
+                      <a :href="portfolio.node.url" target="__blank" rel="noopener">visit the project</a>
                     </div>
                   </div>
                 </div>

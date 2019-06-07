@@ -21,7 +21,7 @@
               <a
                 href="https://www.linkedin.com/in/ayokunle-adesanya-2a217b89/"
                 class="hover:text-teal-500 mx-2"
-                target="__blank"
+                target="__blank" rel="noopener"
                 >LinkedIn
               </a>
             </li>
@@ -30,7 +30,7 @@
               <a
                 href="https://github.com/mrayor"
                 class="hover:text-teal-500 mx-2"
-                target="__blank"
+                target="__blank" rel="noopener"
                 >Github
               </a>
             </li>
@@ -39,7 +39,7 @@
               <a
                 href="https://medium.com/@adesanyaayokunle"
                 class="hover:text-teal-500 mx-2"
-                target="__blank"
+                target="__blank" rel="noopener"
                 >Medium
               </a>
             </li>
@@ -82,7 +82,7 @@
         <h3 class="text-xl font-medium py-5">recent projects</h3>
         <div v-for="portfolio in $page.portfolios.edges" :key="portfolio.id">
           <div class="py-1">
-            <a :href="portfolio.node.url" target="_blank"
+            <a :href="portfolio.node.url" target="_blank" rel="noopener"
               ><h1 class="hover:text-teal-500 truncate">
                 {{ portfolio.node.title }}
               </h1></a
@@ -98,7 +98,7 @@
         <h3 class="text-xl font-medium py-5">recent pictures</h3>
         <div v-for="portfolio in $page.portfolios.edges" :key="portfolio.id">
           <div class="py-1">
-            <a :href="portfolio.node.featuredImage" target="_blank"
+            <a :href="portfolio.node.featuredImage" target="_blank" rel="noopener"
               ><h1 class="hover:text-teal-500 truncate">
                 {{ portfolio.node.imageName }}
               </h1></a

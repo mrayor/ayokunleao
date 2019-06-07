@@ -14,17 +14,24 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     rel: "stylesheet",
     href:
       "https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap"
+  },{
+    rel: "canonical",
+    href: "https://www.ayokunleao.dev"
   });
   Vue.filter('formatDate', function(value) {
     if (value) {
       return moment(String(value)).format('LLL')
     }
   });
-  head.htmlAttrs = { lang: "en" };
+  head.htmlAttrs = { lang: "en", amp: true };
   head.meta.push({
     name: "keywords",
     content:
       "HTML,CSS,PHP,JavaScript,Creative,Designer,Developer,Nigeria,Laravel,Freelance,Vuejs,Gridsome,Nuxt,Application,Website,Graphics,Video,Animation"
+  },{
+    name: "viewport", content: "width=device-width, initial-scale=1"
+  },{
+    'http-equiv': "Content-Type", content: "text/html; charset=utf-8"
   });
   appOptions.render = h =>
     h(
