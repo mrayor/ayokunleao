@@ -12,7 +12,7 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   Vue.component("Layout", DefaultLayout);
   head.link.push({
     rel: "preload",
-    as: "font",
+    as: "style",
     crossorigin: "crossorigin",
     href:
       "https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap"
