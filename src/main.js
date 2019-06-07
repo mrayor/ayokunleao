@@ -15,6 +15,11 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     href:
       "https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap"
   },{
+    rel: "preload",
+    as: "style",
+    href:
+      "https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap"
+  },{
     rel: "canonical",
     href: "https://www.ayokunleao.dev"
   });
