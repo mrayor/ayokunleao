@@ -11,7 +11,9 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
   head.link.push({
-    rel: "stylesheet",
+    rel: "preload",
+    as: "font",
+    crossorigin: "crossorigin",
     href:
       "https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap"
   },{
